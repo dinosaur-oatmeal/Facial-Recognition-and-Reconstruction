@@ -111,13 +111,13 @@ def main():
 
     num_images, height, width = images.shape
     img_idx = 1
-    n_comps = 150
+    n_comps = 200
 
     # Compute PCA and visualize
     eigenfaces, weights = compute_pca(images, face_mean, n_comps)
 
     # Visualize some eigenfaces
-    fig = plt.figure(figsize=(8, 8))
+    fig = plt.figure(figsize=(4, 4))
     fig.suptitle("Top 16 Eigenfaces", fontsize=16)
     grid = ImageGrid(fig, 111, nrows_ncols=(4, 4), axes_pad=0)
 
